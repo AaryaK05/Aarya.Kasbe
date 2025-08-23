@@ -20,7 +20,17 @@
 }
 
 body {
-  background: var(--background);
+  /* background: var(--background); */
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to bottom, #211951, #6420AA);
+  background-image: url('/bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.navelement:hover{
+  border: 1px;
+  border-radius: 20px;
+  box-shadow: inset 1px 1px 6px 0.1px rgba(252, 252, 252, 0.4), inset -3px -2px 6px 0.1px rgba(252, 252, 252, 0.4)
 }
