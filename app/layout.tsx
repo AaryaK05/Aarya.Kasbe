@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "aaryakasbe",
-  description: "Goated portfolio dev by hisukurifu, aka @astriknormal on twt",
+  description: "Aarya's portfolio",
 };
 
 export default function RootLayout({
