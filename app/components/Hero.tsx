@@ -4,7 +4,7 @@ export default function Hero() {
     return(
         <div className="w-screen h-screen flex justify-center items-center">
             <div className="w-80 sm:w-[620px] flex flex-col items-center justify-center -mt-10">
-                <p className="text-left w-full text-blue-300 pl-2">//serving profile.jsx</p>
+                <p className="text-left w-full text-blue-300 pl-2">{"//"}serving profile.jsx</p>
                 <h1 className="text-7xl font-bold">
                     Crafting Scalable Solution With <span className="text-red-300">Precision</span>
                 </h1>
