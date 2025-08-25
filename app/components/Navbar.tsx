@@ -1,4 +1,9 @@
 import Link from "next/link";
+import { Fira_Code } from "next/font/google";
+
+const fira=Fira_Code({
+    weight:"400"
+  })
 
 export default function Navbar() {
     const list = {
@@ -10,7 +15,7 @@ export default function Navbar() {
 
     return (
         <div 
-            className="px-4 py-2 m-6 mt-10 rounded-xl w-80 sm:w-[620px] md:w-[1024px] flex justify-center sm:gap-6"
+            className={` text-white px-4 py-2 m-6 mt-10 rounded-xl w-80 sm:w-[610px] md:w-[558px] lg:w-[1024px] flex justify-center sm:gap-6 ${fira.className}`}
             style={{
                 background: 'linear-gradient(to bottom, rgba(252, 252, 252, 0.2), rgba(252, 252, 252, 0.1))',
                 backdropFilter: 'blur(2px)',
@@ -20,7 +25,7 @@ export default function Navbar() {
             {Object.entries(list).map(([key, href]) => (
                 <Link key={key} href={href}>
                     <p 
-                        className="px-3 py-2 rounded-sm hover:text-[rgba(252, 252, 252, 0.4)] navelement hover:text-shadow-white text-shadow-sm hover:w-20 flex justify-center items-center font-bold"
+                        className=" sm:text-[1.9rem] md:text-[1.7rem] lg:text-[1.2rem] px-3 py-2 rounded-sm hover:text-[rgba(252, 252, 252, 0.4)] navelement hover:text-shadow-white text-shadow-sm hover:w-20 flex justify-center items-center font-bold"
                     >{key}</p>
                 </Link>
             ))}

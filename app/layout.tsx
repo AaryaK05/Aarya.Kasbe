@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Sora } from "next/font/google";
+import { Fira_Code } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -11,6 +13,11 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const sora=Sora({
+  weight:"200"
+})
+
 
 export const metadata: Metadata = {
   title: "aaryakasbe",
@@ -24,8 +31,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${sora.className} antialiased`}
       >
         {children}
       </body>
